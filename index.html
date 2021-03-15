@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <h1>Bubbling</h1>
+  <div id="select-box" class="text-box">
+    <legend>Choose the event listener<br>press <strong>OK</strong> and than <strong>Click</strong></legend> 
+    <select name="listener-select" id="listener-select">
+      <option value="ARTICLE"></option>
+      <option value="ARTICLE">ARTICLE</option>
+      <option>SECTION</option>
+      <option>MAIN</option>
+    </select>
+    <button id="btn">OK</button> 
+  </div>
+  <main id="main" class="elements-target flex blue">MAIN
+    <section id="section" class="elements-target flex green">SECTION
+          <article id="article" class="elements-target red">ARTICLE</article>
+      </section>
+  </main>
+  <div id="circle"></div>
+  <div id="answer-box" class="text-box">
+    <p id="answer-target">target is...</p>
+    <p id="answer-current-target">currentTarget is...</p>
+  </div>
+  <script src="./assets/scripts/index.js"></script>
+</body>
+</html>
